@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List with Calendar Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>To-Do List with Calendar Progress</h1>
+  <div class="todo-container">
+    <h2>Today's Tasks</h2>
+    <div id="task-input">
+      <input type="text" id="new-task" placeholder="Add a new task...">
+      <button id="add-task">+</button>
+    </div>
+    <ul id="task-list"></ul>
+    <div id="progress">
+      <p>Tasks Completed: <span id="completed-count">0</span>/<span id="total-count">0</span></p>
+      <p>Progress: <span id="progress-percent">0</span>%</p>
+    </div>
+  </div>
+  <div class="calendar-container">
+    <h2>Progress Calendar</h2>
+    <div id="calendar"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
